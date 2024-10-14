@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <!-- Heading Name -->
+    <div class="heading">
+        <h1>Image Gallery</h1>
+    </div>
+
+    <!-- Image Gallery section all images in one div -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src=
+"https://th.bing.com/th/id/OIP.DfbxXe6MIcBZC65o41F4zwHaE8?rs=1&pid=ImgDetMain"
+                onclick="openModal(
+'https://th.bing.com/th/id/OIP.DfbxXe6MIcBZC65o41F4zwHaE8?rs=1&pid=ImgDetMain')"
+                alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://th.bing.com/th/id/OIP.Bv1b1hxYZQv6whHwY-EnqQHaD4?rs=1&pid=ImgDetMain"
+                onclick="openModal(
+'https://th.bing.com/th/id/OIP.Bv1b1hxYZQv6whHwY-EnqQHaD4?rs=1&pid=ImgDetMain')"
+                alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://th.bing.com/th/id/OIP.dwkGIsW22cNa6Uli0tIw0AHaGg?rs=1&pid=ImgDetMain"
+                onclick="openModal(
+'https://th.bing.com/th/id/OIP.dwkGIsW22cNa6Uli0tIw0AHaGg?rs=1&pid=ImgDetMain')"
+                alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://st.adda247.com/https://s3-ap-south-1.amazonaws.com/adda247jobs-wp-assets-adda247/articles/wp-content/uploads/2022/12/28114047/Structure-of-the-atmosphere-2.jpg"
+                onclick="openModal(
+'https://st.adda247.com/https://s3-ap-south-1.amazonaws.com/adda247jobs-wp-assets-adda247/articles/wp-content/uploads/2022/12/28114047/Structure-of-the-atmosphere-2.jpg')"
+                alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://th.bing.com/th/id/OIP._OWX6VR0fQxcPqxc60OGUgHaD4?rs=1&pid=ImgDetMain"
+                onclick="openModal(
+'https://th.bing.com/th/id/OIP._OWX6VR0fQxcPqxc60OGUgHaD4?rs=1&pid=ImgDetMain')"
+                alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://th.bing.com/th/id/OIP.rVb1JOaG5iujLEIGrgpHiAHaFG?rs=1&pid=ImgDetMain"
+                onclick="openModal(
+'https://th.bing.com/th/id/OIP.rVb1JOaG5iujLEIGrgpHiAHaFG?rs=1&pid=ImgDetMain')"
+                alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://th.bing.com/th/id/OIP.a1ZkRuiKwSvQOCZeH6j8-gHaHa?rs=1&pid=ImgDetMain"
+                onclick="openModal(
+'https://th.bing.com/th/id/OIP.a1ZkRuiKwSvQOCZeH6j8-gHaHa?rs=1&pid=ImgDetMain')"
+                alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"https://th.bing.com/th/id/OIP.wSxWl9vCuNrItM9joMsR1QHaHa?rs=1&pid=ImgDetMain"
+                onclick="openModal(
+'https://th.bing.com/th/id/OIP.wSxWl9vCuNrItM9joMsR1QHaHa?rs=1&pid=ImgDetMain')"
+                alt="Image 8">
+        </div>
+    </div>
+
+    <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
